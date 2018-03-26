@@ -23,7 +23,7 @@ app.get('/update', function(req, res) {
 	}
  
 	var csvform = req.query.api_key + "," + req.query.field1
-	fs.appendFile('update.txt', csvform+"\n",
+	fs.appendFile('update.csv', csvform+"\n",
 		function(err) {
 			if(err)
 				throw err
@@ -56,7 +56,7 @@ app.get('/get', function(req,res) {
 	}
 
 	
-	fs.readFile('update.txt', 'utf-8', 
+	fs.readFile('update.csv', 'utf-8', 
 		function(err, data)
 		{
 			if(err) throw err
