@@ -12,7 +12,7 @@ update api_key and field1 to file
 
 show all query in the file
 
-*/get?count={}
+* /get?count={}
 
 show recent query of count
 
